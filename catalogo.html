@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo - Murbas Labs</title>
+  <link rel="icon" href="img/ICfavicon.png" />
+  <link rel="stylesheet" href="catalogo/catalogo.css" />
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <a href="index.html">
+      <img src="img/logoCom.png" alt="Logo Home" id="home-logo" />
+    </a>
+    <div id="menu">
+      <button onclick="toggleMenu()">☰ Menu</button>
+    </div>
+  </header>
+
+  <!-- Menu -->
+  <nav id="menu-items">
+    <a href="menu/quemSomos/quemSomos.html">>Quem Somos</a>
+    <a href="menu/redes/redes.html">Redes</a>
+  </nav>
+
+  <!-- Conteúdo -->
+  <main>
+    <h2 id="catalogoh2">Catálogo</h2>
+    <div class="catalogo" id="catalogo-lista"></div>
+
+    <div class="carrinho-btn" id="abrir-carrinho">
+      🛒 Carrinho
+      <div class="carrinho-content" id="carrinho-itens"></div>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <img src="img/home-logo.png" alt="Logo Rodapé" />
+  </footer>
+
+  <script src="catalogo/catalogo.js"></script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+body {
+    background-image: url('../img/background.png');
+    background-size: 140%;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: helvetica;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #020c2d;
+    height: 70px;
+    position: relative; /* importante para posicionamentos internos, se precisar */
+  }
+  
+  #menu {
+    margin-left: auto;
+  }
+  
+  #home-logo {
+    height: 50px;
+    width: auto;
+  }
+
+  #menu {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    height: 10px;
+  }
+  
+  #menu button {
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px; /* Arredondar bordas */
+    transition: all 0.3s ease; /* Transição suave para o efeito de hover */
+  }
+  
+  #menu button:hover {
+    background-color: white;
+    color: #333; /* Texto escuro ao passar o mouse */
+  }
+
+  /* Estilos para o menu de navegação */
+#menu-items {
+    display: none; /* Inicialmente invisível, será mostrado quando o botão for clicado */
+    text-align: right;
+    position: absolute;
+    top: 80px; /* Ajuste para ficar abaixo do botão de menu */
+    right: 10px;
+    background-color: #020c2d; /* Fundo escuro e semitransparente */
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px; /* Largura do menu */
+  }
+  
+  #menu-items a {
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none; /* Remove o sublinhado */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Borda leve entre os itens */
+    transition: background-color 0.3s ease;
+  }
+  
+  #menu-items a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Efeito de hover */
+  }
+  
+  #menu-items a:last-child {
+    border-bottom: none; /* Remove a borda inferior do último item */
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #020c2d;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    border-top: 1px solid #444;
+    z-index: 1000;
+  }
+  
+  footer img {
+    height: 60px;
+    margin-bottom: 5px;
+  }
+  
+  footer div {
+    font-size: 14px;
+    opacity: 0.8;
+  }
+  
+  main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    color: white;
+  }
+  
+  #catalogo-btn {
+    margin-bottom: 20px; /* Distância entre o botão e os dots */
+  }
+  
+  .catalogo-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 14px 28px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+  }
+  
+  .catalogo-btn:hover {
+    background-color: white;
+    color: #333;
+  }
+  
+  
+  /* Dots estilizados */
+  .dots {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  
+  .dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.4;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  
+  .dot:hover {
+    transform: scale(1.5);
+    opacity: 0.9;
+  }
+  
+  .slide {
+    font-size: 80px; 
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .catalogo-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 14px 28px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    margin: 10px;
+  }
+  
+  .catalogo-btn:hover {
+    background-color: white;
+    color: #333;
+  }
+  
+  
+
+
+/* Ajustes para responsividade */
+body {
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header, footer {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+main {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+
+/* Menu responsivo */
+#menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #menu button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  #menu-items {
+    flex-direction: column;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  main {
+    padding: 10px;
+  }
+}

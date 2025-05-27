@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Distrital</title>
+  <link rel="icon" href="img/ICfavicon.png">
+  <link rel="stylesheet" href="homepage/index.css">
+</head>
+<body>
+<!-- Forçando rebuild do GitHub Pages -->
+
+  <!-- Cabeçalho com logo e botão de menu -->
+  <header>
+    <a href="index.html">
+      <img src="img/logoCom.png" id="home-logo">
+    </a>
+    <div id="menu">
+      <button onclick="toggleMenu()">☰ Menu</button>
+    </div>
+  </header>
+
+  <!-- Menu de navegação -->
+  <nav id="menu-items" style="display: none">
+    <a href="menu/quemSomos/quemSomos.html">Quem Somos</a>
+    <a href="menu/redes/redes.html">Redes</a>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <div id="slide" class="carousel">
+  <h1 id="slide-text" class="slide"></h1>
+  <div id="catalogo-btn-container"></div>
+  <div id="dots-container" style="margin-top: 20px; display: flex; gap: 8px; justify-content: center;"></div>
+</div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <img src="img/home-logo.png" alt="Logo Rodapé">
+  </footer>
+
+  <script src="homepage/index.js" defer></script>
+
+</body>
+</html>
+
+

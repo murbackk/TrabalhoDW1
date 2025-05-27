@@ -1,0 +1,136 @@
+/* Plano de fundo do site */
+body {
+  background-image: url('../../img/background.png'); /* Imagem de fundo personalizada */
+  background-size: 140%;                  /* A imagem será aumentada 140% do tamanho original */
+  background-position: center;            /* Centraliza a imagem */
+  background-repeat: no-repeat;           /* Não repete a imagem */
+  color: white;                           /* Define a cor padrão do texto como branca */
+  font-family: Helvetica, sans-serif;     /* Fonte principal usada no site */
+  margin: 0;                              
+  padding: 0;
+  text-align: center;                     /* Centraliza todos os textos padrão */
+}
+
+/* Cabeçalho fixo com logo e botão de menu */
+header {
+  display: flex;                          /* Usa flexbox para alinhar os elementos */
+  align-items: center;                    /* Alinha verticalmente os itens */
+  padding: 10px 20px;                     /* Espaçamento interno */
+  background-color: #020c2d;              /* Azul escuro sólido */
+  height: 70px;                           /* Altura do cabeçalho */
+  justify-content: space-between;        /* Espaça logo à esquerda e menu à direita */
+}
+
+/* Logo do cabeçalho */
+#home-logo {
+  height: 50px;
+  width: auto;
+}
+
+
+
+#menu {
+  position: absolute;                    
+  top: 30px;                              /* Posiciona o menu no topo */
+  right: 20px;                            /* Alinha à direita */
+}
+
+/* Botão do menu */
+#menu button {
+  background-color: transparent;         /* Fundo transparente */
+  border: 2px solid white;               /* Borda branca */
+  color: white;                          /* Texto branco */
+  padding: 10px 20px;                    /* Espaçamento interno */
+  font-size: 16px;                       /* Tamanho do texto */
+  cursor: pointer;                       /* Cursor de mão ao passar o mouse */
+  border-radius: 25px;                   /* Borda arredondada */
+  transition: all 0.3s ease;             /* Transição suave ao interagir */
+}
+
+#menu button:hover {
+  background-color: white;               /* Fundo branco ao passar o mouse */
+  color: #333;                           /* Texto escuro ao passar o mouse */
+}
+
+/* Menu suspenso com os links */
+#menu-items {
+  display: none;                         /* Esconde o menu até o clique */
+  text-align: right;                     /* Alinha o texto à direita */
+  position: absolute;
+  top: 80px;                             /* Posição logo abaixo do botão */
+  right: 10px;
+  background-color: #020c2d;             /* Fundo igual ao do header */
+  border-radius: 10px;                   /* Cantos arredondados */
+  padding: 10px;
+  width: 200px;
+  z-index: 100;
+}
+
+#menu-items a {
+  display: block;                        /* Ocupa toda a largura */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;                 /* Remove sublinhado */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Linha divisória entre links */
+  transition: background-color 0.3s ease;
+}
+
+#menu-items a:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Leve destaque ao passar o mouse */
+}
+
+#menu-items a:last-child {
+  border-bottom: none;                   /* Remove linha do último item */
+}
+
+/* Rodapé fixo */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #020c2d;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  border-top: 1px solid #444;
+  z-index: 1000;
+}
+
+/* Logo do rodapé */
+footer img {
+  height: 60px;
+  margin-bottom: 5px;
+}
+
+footer div {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Conteúdo principal centralizado */
+main {
+  padding: 10px 20px; /* espaço para não ficar encostado no topo */
+  min-height: calc(100vh - 140px); /* altura da tela menos header e footer */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Título "Quem Somos" */
+main h1 {
+  font-size: 48px;             /* Tamanho grande do título */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Texto da seção */
+.descricao {
+  max-width: 1500px;            /* Limita a largura do texto */
+  font-size: 40px;             /* Tamanho do parágrafo */
+  line-height: 1.6;            /* Espaçamento entre linhas */
+  text-align: center;          /* Garante centralização */
+}
+
+  
